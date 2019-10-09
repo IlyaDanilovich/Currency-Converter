@@ -3,6 +3,6 @@
 Воспользовавшись конвертером валют, вы с легкостью сможете сделать перевод курса долларов США, евро, российских рублей.
 Конвертер валют онлайн используют не только экономисты, бизнесмены и банковские работники. Помощь этого простого и практичного сервиса пригодится и обычным людям, которые планируют какую-либо покупку, собираются за границу и т.д.
 
-[SRC](https://github.com/IlyaDanilovich/Currency-Converter/blob/master/SRS.md)
+[SRS](https://github.com/IlyaDanilovich/Currency-Converter/blob/master/SRS.md)
 
 [Мокапы](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Mockup)
