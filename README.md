@@ -12,3 +12,5 @@
 [SRS](https://github.com/IlyaDanilovich/Currency-Converter/blob/master/SRS.md)
 
 [Мокапы](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Mockup)
+
+[Диаграммы](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Diagrams)
