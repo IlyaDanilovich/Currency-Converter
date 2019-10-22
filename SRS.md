@@ -51,7 +51,7 @@
 
 ### **2.2 Интерфейс пользователя**<a name="2.2"></a>
 
-![](https://github.com/IlyaDanilovich/Currency-Converter/blob/master/Mockup/MainWindow.png)
+![](https://github.com/IlyaDanilovich/Currency-Converter/blob/master/Mockup/MainWindow.jpg)
 
 При запуске приложения пользователь получит текстовое сообщение с курсом основных валют (USD, EUR, RUB) по отношению к белорусскому рублю на сегодняшний день. Пользователю будет предложено поле для ввода суммы и два поля для выбора валют. После нажатия клавиши «перевести» пользователь получит итоговую сумму в нужной валюте.
 
