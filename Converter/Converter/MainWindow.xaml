@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Converter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinWidth="500" MinHeight="200">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="2"  Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="False" ScrollViewer.CanContentScroll="False" ShowGridLines="False" UseLayoutRounding="False" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Margin="20,10,10,10" VerticalContentAlignment="Center" AutomationProperties.Name="fromCurrency">
+                <StackPanel Height="100" Width="100"/>
+            </ComboBox>
+            <ComboBox Grid.Column="3" Margin="10,10,20,10" VerticalContentAlignment="Center" AutomationProperties.Name="toCurrency"/>
+            <TextBox Grid.Column="1" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" AutomationProperties.Name="fromAmount"/>
+            <TextBox Grid.Column="2" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" AutomationProperties.Name="toAmount"/>
+        </Grid>
+        <Button Content="Перевести" Grid.Column="1" Grid.Row="2" Margin="20,10,20,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AutomationProperties.Name="convertButton"/>
+        <TextBox Grid.Column="1" TextWrapping="Wrap" Margin="20,20,20,10" AutomationProperties.Name="messageBox"/>
     </Grid>
 </Window>
