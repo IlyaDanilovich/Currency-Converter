@@ -6,4 +6,4 @@
 2. [Activity](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Diagrams/Activity)
 3. [Sequence](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Diagrams/Sequence)
 4. [State](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Diagrams/State)
-
+5. [Class](https://github.com/IlyaDanilovich/Currency-Converter/tree/master/Diagrams/Class)
