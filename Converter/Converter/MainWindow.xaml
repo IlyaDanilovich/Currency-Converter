@@ -23,14 +23,22 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-            <ComboBox Margin="20,10,10,10" VerticalContentAlignment="Center" AutomationProperties.Name="fromCurrency">
-                <StackPanel Height="100" Width="100"/>
+            <ComboBox Margin="20,10,10,10" VerticalContentAlignment="Center" Name="fromCurrency">
+                <ComboBoxItem Content="BYN"/>
+                <ComboBoxItem Content="USD"/>
+                <ComboBoxItem Content="EUR"/>
+                <ComboBoxItem Content="RUB"/>
             </ComboBox>
-            <ComboBox Grid.Column="3" Margin="10,10,20,10" VerticalContentAlignment="Center" AutomationProperties.Name="toCurrency"/>
-            <TextBox Grid.Column="1" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" AutomationProperties.Name="fromAmount"/>
-            <TextBox Grid.Column="2" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" AutomationProperties.Name="toAmount"/>
+            <ComboBox Grid.Column="3" Margin="10,10,20,10" VerticalContentAlignment="Center" Name="toCurrency">
+                <ComboBoxItem Content="BYN"/>
+                <ComboBoxItem Content="USD"/>
+                <ComboBoxItem Content="EUR"/>
+                <ComboBoxItem Content="RUB"/>
+            </ComboBox>
+            <TextBox Grid.Column="1" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" Name="fromAmount" TextChanged="FromAmount_TextChanged"/>
+            <TextBox Grid.Column="2" Margin="10" TextWrapping="Wrap" VerticalContentAlignment="Center" Name="toAmount"/>
         </Grid>
-        <Button Content="Перевести" Grid.Column="1" Grid.Row="2" Margin="20,10,20,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AutomationProperties.Name="convertButton"/>
-        <TextBox Grid.Column="1" TextWrapping="Wrap" Margin="20,20,20,10" AutomationProperties.Name="messageBox"/>
+        <Button Content="Перевести" Grid.Column="1" Grid.Row="2" Margin="20,10,20,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="convertButton" Click="ConvertButton_Click"/>
+        <TextBox Grid.Column="1" TextWrapping="Wrap" Margin="30,20,20,10" Name="messageBox"/>
     </Grid>
 </Window>
