@@ -22,6 +22,9 @@ namespace Converter
             toCurrency.SelectedIndex = 1;
 
             convertButton.IsEnabled = false;
+
+            toAmount.IsReadOnly = true;
+            messageBox.IsReadOnly = true;
         }
 
         private Dictionary<string, double> Currencies { get; set; }
@@ -47,7 +50,6 @@ namespace Converter
         {
             fromAmount.IsReadOnly = false;
             messageBox.Text = $"EUR: {Currencies["EUR"]}\r\nUSD: {Currencies["USD"]}\r\nRUB: {Currencies["RUB"]}\n";
-            messageBox.IsReadOnly = true;
         }
 
         private void InitializeConnection()
@@ -79,6 +81,11 @@ namespace Converter
             }
 
             return response;
+        }
+
+        private void UpdateRatesButton_Click(object sender, RoutedEventArgs e)
+        {
+            InitializeConnection();
         }
 
         private void ConvertButton_Click(object sender, RoutedEventArgs e)

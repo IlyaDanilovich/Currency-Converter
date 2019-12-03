@@ -40,5 +40,6 @@
         </Grid>
         <Button Content="Перевести" Grid.Column="1" Grid.Row="2" Margin="20,10,20,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="convertButton" Click="ConvertButton_Click"/>
         <TextBox Grid.Column="1" TextWrapping="Wrap" Margin="30,20,20,10" Name="messageBox"/>
+        <Button x:Name="updateRatesButton" Grid.ColumnSpan="2" Content="Обновить курс валют" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="131" Click="UpdateRatesButton_Click"/>
     </Grid>
 </Window>
