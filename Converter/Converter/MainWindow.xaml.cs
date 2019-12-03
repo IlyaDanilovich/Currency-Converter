@@ -47,6 +47,7 @@ namespace Converter
         {
             fromAmount.IsReadOnly = false;
             messageBox.Text = $"EUR: {Currencies["EUR"]}\r\nUSD: {Currencies["USD"]}\r\nRUB: {Currencies["RUB"]}\n";
+            messageBox.IsReadOnly = true;
         }
 
         private void InitializeConnection()
